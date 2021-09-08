@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import Movies from "./Movies";
 import Pagination from "./Pagination";
+import dotenv from "dotenv";
+dotenv.config();
 // import { Link, Route, useRouteMatch, Switch } from "react-router-dom";
 // import ErrorPage from "./ErrorPage";
 const Discover = () => {
@@ -12,17 +14,12 @@ const Discover = () => {
   const [pageData, setPageData] = useState([]);
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(3);
-
   const getMoviesDB = async () => {
     const { data } = await Axios.get(
-      `https://api.themoviedb.org/3/discover/movie?api_key=7825a216f1278762209ce08708423500&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_watch_monetization_types=flatrate`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_watch_monetization_types=flatrate`
     );
-    console.log(data);
-    console.log(data.results);
     setPageData(data.results);
     setTotal(data.total_pages);
-    console.log(pageData);
-    console.log(total);
   };
   useEffect(() => {
     getMoviesDB();

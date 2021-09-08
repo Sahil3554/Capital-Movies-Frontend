@@ -6,7 +6,7 @@ const Pagination = ({ page, setPage, total }) => {
     for (let i = page; i <= page + 2; i++) {
       content.push(
         <li className="page-item" onClick={() => setPage(i)} key={i}>
-          <a className="page-link text-primary">{i}</a>
+          <button className="page-link text-primary">{i}</button>
         </li>
       );
     }
@@ -27,15 +27,21 @@ const Pagination = ({ page, setPage, total }) => {
       <nav aria-label="Page navigation example">
         <ul className="pagination">
           <li className="page-item">
-            <a className="page-link text-primary" onClick={() => decPage()}>
+            <button
+              className="page-link text-primary"
+              onClick={() => decPage()}
+            >
               Previous
-            </a>
+            </button>
           </li>
           {getPaginate(total)}
           <li className="page-item">
-            <a className="page-link text-primary" onClick={() => incPage()}>
+            <button
+              className="page-link text-primary"
+              onClick={() => incPage()}
+            >
               Next
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
