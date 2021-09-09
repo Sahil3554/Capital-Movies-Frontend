@@ -7,6 +7,7 @@ const Movies = ({ pageData }) => {
       <div className="row">
         {pageData.map((arr, index) => (
           <MovieDetails
+            movie_id={arr.id}
             key={index}
             title={arr.original_title}
             avatar={arr.poster_path}

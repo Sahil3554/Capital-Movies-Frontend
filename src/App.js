@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
 import Discover from "./components/Discover";
 import Register from "./components/Register";
+import Detail from "./components/Detail";
 function App() {
   return (
     <div className="App">
       <Router>
         <Route exact path="/login" component={Login}></Route>
         <Route exact path="/discover" component={Discover}></Route>
+        <Route exact path="/discover/detail/:id" component={Detail}></Route>
         <Route exact path="/signup" component={Register}></Route>
         <Route exact path="/" component={Discover}></Route>
       </Router>
