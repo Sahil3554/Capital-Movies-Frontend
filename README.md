@@ -3,9 +3,9 @@
 This project was Live at [Netlify](https://captial-movies.netlify.app/).
 
 ## About Project
-This is a Movies App Build Using MERN Stack and Movie DB API
-This Repository Will Only Contain The FrontEnd Part Which Was Developed Using React JS.
-The Backend Part i.e Express API of this Web Application is live on heroku.
+This is a Movies App Build Using MERN Stack and Movie DB API.\
+This Repository Will Only Contain The FrontEnd Part Which Was Developed Using React JS.\
+The Backend Part i.e Express API of this Web Application is live on heroku.\
 
 
 ## Available Scripts
