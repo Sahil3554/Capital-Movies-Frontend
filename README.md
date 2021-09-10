@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Movies App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was Live at [Netlify](https://captial-movies.netlify.app/).
+
+## About Project
+This is a Movies App Build Using MERN Stack and Movie DB API
+This Repository Will Only Contain The FrontEnd Part Which Was Developed Using React JS.
+The Backend Part i.e Express API of this Web Application is live on heroku.
+
 
 ## Available Scripts
 
@@ -68,4 +74,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Capital-Movies-Frontend
