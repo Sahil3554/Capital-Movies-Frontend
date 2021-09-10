@@ -33,7 +33,7 @@ const Login = (props) => {
       props.history.push("/discover");
       // console.log(res);
     } catch (err) {
-      console.log(err);s
+      console.log(err);
       setData({ ...data, error: err.response.data.error });
       swal("Error!", error, "error");
     }
