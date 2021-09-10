@@ -20,7 +20,7 @@ const Register = (props) => {
     try {
       setData({ ...data, error: null });
       await axios.post(
-        "/api/auth/register",
+        `${process.env.REACT_APP_SERVER_URL}/register`,
         { name, email, password },
         {
           headers: {
